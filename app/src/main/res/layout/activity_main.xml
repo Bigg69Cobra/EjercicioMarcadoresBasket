@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:ignore="MissingClass">
+
+    <TextView
+        android:id="@+id/PVisitante"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="P"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonVisitanteSumar2" />
+
+    <Button
+        android:id="@+id/buttonFaltasVisitanteSumar1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#F44336"
+        android:gravity="center"
+        android:text="+1"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.328"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PVisitante"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <Button
+        android:id="@+id/buttonFaltasVisitanteToCero"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#F44336"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toEndOf="@+id/buttonFaltasVisitanteRestar1"
+        app:layout_constraintTop_toBottomOf="@+id/marcadorFaltasVisitante"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <TextView
+        android:id="@+id/marcadorFaltasVisitante"
+        android:layout_width="104dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#F44336"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/PVisitante"
+        app:layout_constraintTop_toBottomOf="@+id/buttonVisitanteSumar3" />
+
+    <Button
+        android:id="@+id/buttonFaltasVisitanteRestar1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#F44336"
+        android:gravity="center"
+        android:text="-1"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toEndOf="@+id/buttonFaltasVisitanteSumar1"
+        app:layout_constraintTop_toBottomOf="@+id/marcadorFaltasVisitante"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="75dp"
+        android:layout_height="42dp"
+        android:backgroundTint="#F44336"
+        android:gravity="center"
+        android:text="RESET"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewLocal"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <Button
+        android:id="@+id/buttonVisitanteSumar2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#F44336"
+        android:gravity="center"
+        android:text="+2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toEndOf="@+id/buttonVisitanteSumar1"
+        app:layout_constraintTop_toBottomOf="@+id/marcadorResultadoVisitante" />
+
+    <Button
+        android:id="@+id/buttonVisitanteSumar3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#F44336"
+        android:gravity="center"
+        android:text="+3"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toEndOf="@+id/buttonVisitanteSumar2"
+        app:layout_constraintTop_toBottomOf="@+id/marcadorResultadoVisitante" />
+
+    <Button
+        android:id="@+id/buttonVisitanteRestar1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#F44336"
+        android:gravity="center"
+        android:text="-1"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toEndOf="@+id/buttonVisitanteSumar3"
+        app:layout_constraintTop_toBottomOf="@+id/marcadorResultadoVisitante" />
+
+    <Button
+        android:id="@+id/buttonVisitanteSumar1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#F44336"
+        android:gravity="center"
+        android:text="+1"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marcadorResultadoVisitante" />
+
+    <TextView
+        android:id="@+id/marcadorResultadoVisitante"
+        android:layout_width="148dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#F44336"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVisitante" />
+
+    <TextView
+        android:id="@+id/textViewVisitante"
+        android:layout_width="146dp"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:text="VISITANTE"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLinea" />
+
+    <TextView
+        android:id="@+id/textViewLocal"
+        android:layout_width="117dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="LOCAL"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/marcadorResultadoLocal"
+        android:layout_width="148dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#F44336"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocal" />
+
+    <TextView
+        android:id="@+id/marcadorFaltasLocal"
+        android:layout_width="104dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#F44336"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/PLocal"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLocalSumar3" />
+
+    <TextView
+        android:id="@+id/PLocal"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="P"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLocalSumar2" />
+
+    <Button
+        android:id="@+id/buttonFaltasLocalRestar1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#F44336"
+        android:gravity="center"
+        android:text="-1"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLinea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toEndOf="@+id/buttonFaltasLocalcSumar1"
+        app:layout_constraintTop_toBottomOf="@+id/marcadorFaltasLocal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonFaltasLocalcSumar1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#F44336"
+        android:gravity="center"
+        android:text="+1"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLinea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.328"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PLocal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonFaltasLocalToCero"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#F44336"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLinea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toEndOf="@+id/buttonFaltasLocalRestar1"
+        app:layout_constraintTop_toBottomOf="@+id/marcadorFaltasLocal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonLocalSumar2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#F44336"
+        android:gravity="center"
+        android:text="+2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toEndOf="@+id/buttonLocalSumar1"
+        app:layout_constraintTop_toBottomOf="@+id/marcadorResultadoLocal" />
+
+    <Button
+        android:id="@+id/buttonLocalRestar1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#F44336"
+        android:gravity="center"
+        android:text="-1"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toEndOf="@+id/buttonLocalSumar3"
+        app:layout_constraintTop_toBottomOf="@+id/marcadorResultadoLocal" />
+
+    <Button
+        android:id="@+id/buttonLocalSumar1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#F44336"
+        android:gravity="center"
+        android:text="+1"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marcadorResultadoLocal" />
+
+    <Button
+        android:id="@+id/buttonLocalSumar3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#F44336"
+        android:gravity="center"
+        android:text="+3"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonLocalSumar2"
+        app:layout_constraintTop_toBottomOf="@+id/marcadorResultadoLocal" />
+
+    <TextView
+        android:id="@+id/textViewLinea"
+        android:layout_width="338dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="____________________________________________________"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
